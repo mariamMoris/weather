@@ -1,0 +1,63 @@
+:root{
+    --main-color: rgb(0, 154, 216);
+}
+body{
+    background-image: url(../img/cloud-blue-sky.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link:active
+{
+    border: 2px solid var(--main-color);
+    color: var(--main-color) ;
+
+}
+body:not(body:has(:target)) .home,
+body:has(#news:target) .news,
+body:has(#live:target) .live,
+body:has(#photo:target) .photo,
+body:has(#contact:target) .contact
+{
+    border: 2px solid var(--main-color);
+    color: var(--main-color) ;
+}
+button{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}
+.fa-brands{
+    color: var(--main-color);
+    
+}
+.icons{
+    margin-left: 0%;
+}
+
+.w-60{
+    width: 60%;
+}
+.w-10{
+    width: 10%;
+}
+.footer{
+    display: flex;
+}
+
+@media screen and (max-width :768px){
+    .w-60{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+    }
+    .icons{
+        margin-left: 20%;
+    }
+}
